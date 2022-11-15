@@ -56,10 +56,10 @@ a {
   color: #36bf7f;
 }
 
-a:hover,
+/* a:hover,
 a:focus {
   color: #d96666;
-}
+} */
 
 /* Make images easier to work with */
 /* By default, an image is shown as it is. With this fix, it will never spill outside the container. */
@@ -126,7 +126,17 @@ p {
 }
 
 .content__h1 {
-  margin-top: 2rem;
+  font-size: 2.074rem;
+  margin-bottom: 2rem;
+}
+
+.user-information__h2 {
+  font-size: 1.728rem;
+}
+
+.container__content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .content__div {
@@ -146,12 +156,20 @@ body {
   background-attachment: fixed;
 }
 
+span {
+  font-size: ;
+  display: block;
+}
+
 .btn {
+  font-size: 1.44rem;
+  font-weight: bold;
+  text-transform: uppercase;
   display: inline-block;
   padding: 0.55em 1.5em 0.5em;
-  background-color: #394a59;
-  border: 0.125rem solid #394a59;
-  color: #fff;
+  background-color: #75fa61;
+  border: 0.125rem solid #75fa61;
+  color: #000;
   border-radius: 0.25em;
   margin: 1rem;
 
@@ -166,8 +184,8 @@ body {
 
 .btn:hover,
 .btn:focus-visible {
-  background-color: #59758d;
-  border-color: #59758d;
+  background-color: #3e8c2c;
+  border-color: #3e8c2c;
 }
 
 ul {
@@ -180,12 +198,20 @@ ul {
 }
 
 li {
+  padding-top: 1rem;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   background-color: #000;
   list-style: none;
-  border: 2px solid #fff;
+  border: 2px solid rgb(67, 67, 67);
+  transition: background-color 0.25s;
+}
+
+li:hover,
+li:focus {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(45, 45, 45);
 }
 
 img {

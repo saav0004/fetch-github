@@ -24,11 +24,11 @@ function getUser(ev) {
         obj.forEach((element) => {
           const li = document.createElement("li");
           li.innerHTML = `
-          <p>
+          <p class="content__title">
           <a href="${element["html_url"]}" target="_blank" >${element["name"]}</a>
           </p>
-          <p>Watchers: ${element["watchers"]}</p>
-          <p>Open Issues: ${element["open_issues"]}</p>`;
+          <p class="content__p">Watchers: ${element["watchers"]}</p>
+          <p  class="content__p">Open Issues: ${element["open_issues"]}</p>`;
           df.append(li);
         });
         repoUL.append(df);
