@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./main.js" defer></script>
     <title>Fetch Github</title>
   </head>
   <body>
     <section class="container">
       <div class="container__content">
-        <h1>Fetch Github - prof3ssorSt3v3</h1>
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" />
-        <button class="btn">LOAD</button>
+        <h1 class="content__h1">GitHub Repository Finder</h1>
+        <div class="content__div">
+          <label class="content__username" for="username" required
+            >Username:</label
+          >
+          <input
+            class="content__input"
+            type="text"
+            name="username"
+            id="username"
+          />
+        </div>
+        <div class="div__button">
+          <button class="btn">Show "Repos"</button>
+        </div>
       </div>
 
       <div class="user-information">

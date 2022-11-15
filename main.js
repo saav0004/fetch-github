@@ -4,8 +4,6 @@ let btn = document.querySelector(".btn");
 //event
 btn.addEventListener("click", getUser);
 
-//https://api.github.com/users/{username}/repos
-
 function getUser(ev) {
   let input = document.getElementById("username").value.trim();
   let url = `https://api.github.com/users/${input}/repos`;
@@ -14,7 +12,7 @@ function getUser(ev) {
   let df = new DocumentFragment();
 
   if (input === "") {
-    console.log("not a valid input");
+    alert("Not a valid input");
   } else {
     repoUL.innerHTML = "";
     fetch(url)
@@ -24,7 +22,7 @@ function getUser(ev) {
         obj.forEach((element) => {
           const li = document.createElement("li");
           li.innerHTML = `<p>
-          <a>${element["name"]}</a>
+          <a href="${element["html_url"]}" target="_blank" >${element["name"]}</a>
           </p>
           <p>Watchers: ${element["watchers"]}</p>
           <p>Open Issues: ${element["open_issues"]}</p>`;
@@ -39,7 +37,6 @@ function getUser(ev) {
       });
   }
 }
-
 
 //h.append(name, value)
 //usp = new URLSearchParams()
