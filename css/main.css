@@ -132,11 +132,16 @@ p {
 
 .user-information__h2 {
   font-size: 1.728rem;
+  padding-top: 1rem;
 }
 
 .container__content {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.content__a {
+  font-size: 1.2rem;
 }
 
 .content__div {
@@ -144,6 +149,7 @@ p {
 }
 
 .content__username {
+  font-size: 1.44rem;
   color: white;
 }
 
@@ -157,7 +163,7 @@ body {
 }
 
 span {
-  font-size: ;
+  font-size: 1.44rem;
   display: block;
 }
 
@@ -165,7 +171,6 @@ span {
   font-size: 1.44rem;
   font-weight: bold;
   text-transform: uppercase;
-  display: inline-block;
   padding: 0.55em 1.5em 0.5em;
   background-color: #75fa61;
   border: 0.125rem solid #75fa61;
